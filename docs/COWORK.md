@@ -1,13 +1,13 @@
 # usegis.github.io - working notes
 
-The useGIS home page at https://usegis.org/: the logo and one button to the precinct lookup at
+The UseGIS home page at https://usegis.org/: the logo and one button to the precinct lookup at
 https://lookup.usegis.org/ (its own repo, `usegis/precinct-lookup`). This repo is public, so these notes cover only
 the site itself.
 
 ## Files
 
 - `index.html`: the logo (`usegis-dark.svg` in dark mode), the "Precinct lookup" button and the footer,
-  "© 2026 useGIS | privacy". Plain HTML and CSS, no build step.
+  "© 2026 UseGIS | privacy". Plain HTML and CSS, no build step.
 - `privacy.html`: no cookies or analytics; GitHub Pages may log requests. It covers this site only (Woodie,
   2026-11-21: keep focus on the site, not other sites).
 - `usegis.svg`: Woodie's logo (layered map sheets over "UseGIS"), from his Illustrator export, with the viewBox
@@ -26,5 +26,5 @@ www to usegis.org); CNAME `lookup` usegis.github.io for the lookup's repo. usegi
 
 ## Copy
 
-Fewest words that stay accurate; follow Woodie's wording. The page stays about useGIS: no links to other sites
+Fewest words that stay accurate; follow Woodie's wording. The page stays about UseGIS: no links to other sites
 beyond the lookup.
