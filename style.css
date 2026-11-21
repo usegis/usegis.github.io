@@ -31,6 +31,16 @@
     font: 17px/1.5 -apple-system, "Helvetica Neue", Arial, sans-serif;
   }
 
+  /* Flat grid image that fades toward the top; it stays put while the page scrolls. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url(grid.svg) center bottom / cover no-repeat;
+    pointer-events: none;
+  }
+
   main {
     max-width: 640px;
     margin: 0 auto;
@@ -50,6 +60,7 @@
     border: 1px solid var(--border);
     border-radius: 12px;
     overflow: hidden;
+    background: var(--bg);
     color: inherit;
     text-decoration: none;
     border-color: color-mix(in srgb, var(--glow) 45%, var(--border));

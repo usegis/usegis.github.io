@@ -10,6 +10,8 @@ the site itself.
   beside an image; stacked on a phone), then the footer, "© 2026 UseGIS | privacy". Plain HTML and CSS, no build step.
 - `lookup.svg`: the lookup card's image, Woodie's precinct-lookup avatar turned 90° counterclockwise like the favicon,
   with the shape moved to the center so the card's crop doesn't cut it off. The npm card shows `npm install precinct-lookup` instead of an image.
+- `grid.svg`: the faint background grid, a flat drawing of a floor fading toward a horizon near the top, pinned
+  behind the page. It's a still image on purpose: a 3D CSS grid (2026-11-21) made card hovers glitch.
 - `privacy.html`: no cookies or analytics; GitHub Pages may log requests. It covers this site only (Woodie,
   2026-11-21: keep focus on the site, not other sites).
 - `usegis.svg`: Woodie's logo (layered map sheets over "UseGIS"). Since 2026-11-21 the sheets are open outlines,
