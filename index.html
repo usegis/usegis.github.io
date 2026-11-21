@@ -11,9 +11,10 @@
   body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
     background: var(--bg); font: 18px/1.4 -apple-system, "Helvetica Neue", Arial, sans-serif; }
   img { width: min(40vw, 260px); height: auto; }
-  a { margin-top: 48px; padding: 14px 32px; border-radius: 8px; background: var(--button); color: var(--button-text);
+  a.button { margin-top: 48px; padding: 14px 32px; border-radius: 8px; background: var(--button); color: var(--button-text);
     text-decoration: none; font-weight: 500; }
   footer { position: absolute; bottom: 16px; font-size: 14px; color: #888; }
+  footer a { color: inherit; }
 </style>
 </head>
 <body>
@@ -21,7 +22,7 @@
   <source srcset="usegis-dark.svg" media="(prefers-color-scheme: dark)">
   <img src="usegis.svg" alt="useGIS">
 </picture>
-<a href="https://lookup.usegis.org/">Precinct lookup</a>
-<footer>© 2026 useGIS</footer>
+<a class="button" href="https://lookup.usegis.org/">Precinct lookup</a>
+<footer>© 2026 useGIS | <a href="privacy.html">privacy</a></footer>
 </body>
 </html>
