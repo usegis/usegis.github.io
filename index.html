@@ -6,23 +6,51 @@
 <title>UseGIS</title>
 <link rel="icon" href="favicon.ico">
 <style>
-  :root { color-scheme: light dark; --bg: #fff; --button: #344296; --button-text: #fff; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #14161c; --button: #c3cbf2; --button-text: #14161c; } }
-  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
-    background: var(--bg); font: 18px/1.4 -apple-system, "Helvetica Neue", Arial, sans-serif; }
-  img { width: min(40vw, 260px); height: auto; }
-  a.button { margin-top: 48px; padding: 14px 32px; border-radius: 8px; background: var(--button); color: var(--button-text);
-    text-decoration: none; font-weight: 500; }
-  footer { position: absolute; bottom: 16px; font-size: 14px; color: #888; }
+  :root { color-scheme: light dark; --bg: #fff; --text: #1b2a5e; --muted: #555; --card: #f6f7fa; --border: #dde1ea; --code: #1b2a5e; --code-text: #e8ecf5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14161c; --text: #e8ecf5; --muted: #a9b0c2; --card: #1c1f27; --border: #2c303b; --code: #0c0e13; --code-text: #e8ecf5; } }
+  body { margin: 0; padding: 40px 16px 24px; background: var(--bg); color: var(--text);
+    font: 17px/1.5 -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; }
+  .logo { display: block; width: min(50vw, 220px); height: auto; margin: 0 auto 40px; }
+  a.card { display: flex; gap: 20px; align-items: center; margin-bottom: 20px; padding: 20px; border: 1px solid var(--border);
+    border-radius: 12px; background: var(--card); color: inherit; text-decoration: none; }
+  a.card:hover { border-color: var(--muted); }
+  .card div { flex: 1; }
+  .card h2 { margin: 0 0 6px; font-size: 20px; font-weight: 600; }
+  .card p { margin: 0; color: var(--muted); }
+  .card img, .card pre { flex: none; width: 160px; height: 160px; border-radius: 8px; }
+  .card img { object-fit: cover; }
+  .card pre { margin: 0; box-sizing: border-box; padding: 14px; background: var(--code); color: var(--code-text);
+    font: 13px/1.5 ui-monospace, Menlo, monospace; white-space: pre-wrap; overflow: hidden; }
+  @media (max-width: 520px) { a.card { flex-direction: column; align-items: stretch; } .card img, .card pre { width: 100%; height: auto; } .card img { aspect-ratio: 1; } }
+  footer { margin-top: 32px; text-align: center; font-size: 14px; color: #888; }
   footer a { color: inherit; }
 </style>
 </head>
 <body>
-<picture>
-  <source srcset="usegis-dark.svg" media="(prefers-color-scheme: dark)">
-  <img src="usegis.svg" alt="UseGIS">
-</picture>
-<a class="button" href="https://lookup.usegis.org/">Precinct lookup</a>
-<footer>© 2026 UseGIS | <a href="privacy.html">privacy</a></footer>
+<main>
+  <picture>
+    <source srcset="usegis-dark.svg" media="(prefers-color-scheme: dark)">
+    <img class="logo" src="usegis.svg" alt="UseGIS">
+  </picture>
+  <a class="card" href="https://lookup.usegis.org/">
+    <div>
+      <h2>California Precinct Lookup</h2>
+      <p>Type an address and see its precinct on a map, in all 58 counties, built from each county's public data. The address never leaves your browser.</p>
+    </div>
+    <img src="lookup.jpg" alt="A Redwood City precinct on the map">
+  </a>
+  <a class="card" href="https://www.npmjs.com/package/precinct-lookup">
+    <div>
+      <h2>precinct-lookup on npm</h2>
+      <p>The library behind the lookup: an address in, a precinct and its shape out, from small static files. No database, no server.</p>
+    </div>
+    <pre>npm install precinct-lookup
+
+import { lookup, outline }
+  from 'precinct-lookup'</pre>
+  </a>
+  <footer>© 2026 UseGIS | <a href="privacy.html">privacy</a></footer>
+</main>
 </body>
 </html>
