@@ -8,8 +8,8 @@ the site itself.
 
 - `index.html`: the logo, then a card for each project (title and a line of copy
   beside an image; stacked on a phone), then the footer, "© 2026 UseGIS | privacy". Plain HTML and CSS, no build step.
-- `lookup.jpg`: the lookup card's image, a 360px square from precinct-lookup's `docs/41-46126.png` (Redwood City City
-  Hall). The npm card shows `npm install precinct-lookup` instead of an image.
+- `lookup.svg`: the lookup card's image, Woodie's precinct-lookup avatar turned 90° counterclockwise like the favicon,
+  with the shape moved to the center so the card's crop doesn't cut it off. The npm card shows `npm install precinct-lookup` instead of an image.
 - `privacy.html`: no cookies or analytics; GitHub Pages may log requests. It covers this site only (Woodie,
   2026-11-21: keep focus on the site, not other sites).
 - `usegis.svg`: Woodie's logo (layered map sheets over "UseGIS"). Since 2026-11-21 the sheets are open outlines,
