@@ -6,14 +6,14 @@ the site itself.
 
 ## Files
 
-- `index.html`: the logo (`usegis-dark.svg` in dark mode), then a card for each project (title and a line of copy
+- `index.html`: the logo, then a card for each project (title and a line of copy
   beside an image; stacked on a phone), then the footer, "© 2026 UseGIS | privacy". Plain HTML and CSS, no build step.
 - `lookup.jpg`: the lookup card's image, a 360px square from precinct-lookup's `docs/41-46126.png` (Redwood City City
   Hall). The npm card shows `npm install precinct-lookup` instead of an image.
 - `privacy.html`: no cookies or analytics; GitHub Pages may log requests. It covers this site only (Woodie,
   2026-11-21: keep focus on the site, not other sites).
-- `usegis.svg`: Woodie's logo (layered map sheets over "UseGIS"), from his Illustrator export, with the viewBox
-  cropped to the artwork. `usegis-dark.svg` is the same with the sheets filled #14161c and lighter text colors.
+- `usegis.svg`: Woodie's logo (layered map sheets over "UseGIS"). Since 2026-11-21 the sheets are open outlines,
+  each line stopping where the sheet above covers it, so one file works on light and dark pages.
 - `favicon.ico`: Woodie's 32x32 layered sheets.
 - `CNAME`: `usegis.org`.
 
