@@ -42,7 +42,7 @@
   }
 
   main {
-    max-width: 640px;
+    max-width: 676px;
     margin: 0 auto;
   }
 
@@ -98,7 +98,7 @@
   .card img,
   .card pre {
     flex: none;
-    width: 107px;
+    width: 143px;
     margin: 0;
     border-radius: 0;
   }
