@@ -9,9 +9,9 @@ the site itself.
 - `index.html`: the logo, then a card for each project (title and a line of copy
   beside an image; stacked on a phone), then the footer, "© 2026 UseGIS | privacy". Plain HTML and CSS, no build step.
 - `lookup.svg`: the lookup card's image, drawn by `bin/lookup_svg.py` (`python3 bin/lookup_svg.py > lookup.svg`):
-  Woodie's precinct shape, turned 90° counterclockwise like the favicon, on city blocks in one-point perspective
+  a P-shaped precinct (P for precinct, from Woodie's sketch: two blocks wide and three deep, every corner on an intersection, the bowl closed by a diagonal across one block) on city blocks in one-point perspective
   fading to a horizon. The outline runs down street centerlines; the floor slides so the precinct is centered side to
-  side, a little below middle, and `ZOOM` (1.44) closes the frame in on it for the card; `ZOOM = 1` gives the whole
+  side, a little below middle, and `ZOOM` (1.7) closes the frame in on it for the card; `ZOOM = 1` gives the whole
   floor and horizon for other uses. Perspective, not isometric, keeps it apart
   from ArcGIS's look. A precise print version from real streets is planned. The npm card shows `npm install precinct-lookup` and `npx precinct-lookup fetch 41` instead of an image (2026-11-21).
 - `grid.svg`: the faint background grid, a flat drawing of a floor fading toward a horizon near the top, pinned

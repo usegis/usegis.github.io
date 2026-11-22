@@ -14,7 +14,7 @@ STREET = 10          # street width
 OX = 40              # where the street grid starts across
 CENTER_Y = 0.64      # where the precinct's middle sits, as a share of the height
 SHIFT = [0.0, 0.0]   # how far the floor slides across and away, to center the precinct
-ZOOM = 1.44          # how far the frame closes in on the precinct
+ZOOM = 1.7           # how far the frame closes in on the precinct
 
 
 def to_ground(u, v):
@@ -57,11 +57,10 @@ def visible(pts):
     return pts and big and max(xs) > 0 and min(xs) < W and max(ys) > H * 0.14 and min(ys) < H
 
 
-# The precinct: whole blocks, its outline on street centerlines (lookup.svg's shape, snapped).
+# The precinct, a P for precinct: two blocks wide, three deep, every corner on an intersection, the bowl closed by
+# a diagonal across one block.
 C, R = -1, -4                   # top-left block of the precinct
-SPUR = 70 / BLOCK
-CELLS = [(0, 0), (1, 0), (1, 1), (2, 1), (2, 2), (1, 2), (1, 3), (0, 3), (0, 1), (-SPUR, 1)]
-CELLS = [(j, 2 - i) for i, j in CELLS]   # turned 90° counterclockwise, like lookup.svg
+CELLS = [(0, 0), (2, 0), (2, 1), (1, 2), (1, 3), (0, 3)]
 SHAPE = [(OX + (C + i) * BLOCK, (R + j) * BLOCK) for i, j in CELLS]
 
 # Slide the floor under the camera until the precinct's outline is centered in the frame.
