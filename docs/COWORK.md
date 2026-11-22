@@ -16,6 +16,11 @@ the site itself.
   from ArcGIS's look. A precise print version from real streets is planned. The npm card shows `npm install precinct-lookup` and `npx precinct-lookup fetch 41` instead of an image (2026-11-21).
 - `grid.svg`: the faint background grid, a flat drawing of a floor fading toward a horizon near the top, pinned
   behind the page. It's a still image on purpose: a 3D CSS grid (2026-11-21) made card hovers glitch.
+- `linkedin/banner.png`: the UseGIS LinkedIn cover (1128x191 at 2x), the grid's blue floor fading to a horizon at
+  the top, drawn by `bin/banner_png.py` (`python3 bin/banner_png.py linkedin/banner.png`, needs Pillow) (2026-11-22). `x/header.png`: the same floor for X's 1500x500 header
+  (`python3 bin/banner_png.py x/header.png 1500 500`); the account is @UseGISorg, since @usegis belongs to UseGIS
+  Limited in Exeter, England. `linkedin/logo.png`: the bug (the logo's three sheets, no wordmark) at 400x400 on white, cropped close (Woodie, 2026-11-22),
+  drawn from `usegis.svg` by `bin/logo_png.py`.
 - `privacy.html`: no cookies or analytics; GitHub Pages may log requests. It covers this site only (Woodie,
   2026-11-21: keep focus on the site, not other sites).
 - `usegis.svg`: Woodie's logo (layered map sheets over "UseGIS"). Since 2026-11-21 the sheets are open outlines,
