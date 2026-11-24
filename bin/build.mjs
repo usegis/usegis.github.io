@@ -1,4 +1,5 @@
-// Builds the site into _site/: the static files as they are, and each pages/*.md through pages/template.html.
+// Builds the site into _site/: the static files as they are, each pages/*.md through pages/template.html into _site/data/
+// (pages/index.md is /data/), and a redirect at each page's old address (/precincts went to /data/precincts).
 import { cpSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import MarkdownIt from "markdown-it";
 
@@ -30,12 +31,21 @@ function page(markdown) {
   return template.replace("{{title}}", title).replace("{{content}}", html.trimEnd());
 }
 
+// The old address keeps any #level on the way.
+const redirect = (to) => `<!doctype html><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="${to}">
+<meta http-equiv="refresh" content="0; url=${to}"><script>location.replace("${to}" + location.hash)</script>
+<p>Moved to <a href="${to}">${to}</a>.</p>
+`;
+
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(OUT);
 for (const name of readdirSync(".")) {
   if (!SKIP.has(name)) cpSync(name, `${OUT}/${name}`, { recursive: true });
 }
+mkdirSync(`${OUT}/data`);
 for (const name of readdirSync("pages").filter((n) => n.endsWith(".md"))) {
-  writeFileSync(`${OUT}/${name.replace(/\.md$/, ".html")}`, page(readFileSync(`pages/${name}`, "utf8")));
+  const slug = name.replace(/\.md$/, "");
+  writeFileSync(`${OUT}/data/${slug}.html`, page(readFileSync(`pages/${name}`, "utf8")));
+  if (slug !== "index") writeFileSync(`${OUT}/${slug}.html`, redirect(`/data/${slug}`));
 }
 console.log(`built ${OUT}/`);
