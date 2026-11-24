@@ -212,3 +212,12 @@
   .page .next {
     margin-top: 32px;
   }
+
+  .page pre {
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: var(--code);
+    color: var(--code-text);
+    font: 13px/1.5 ui-monospace, Menlo, monospace;
+    overflow-x: auto;
+  }
