@@ -1,8 +1,8 @@
 # Address data
 
 A precinct lookup needs to know which house numbers are in which precinct. Whatever a county publishes is turned into
-**street ranges**: for each street in a zipcode, runs of house numbers and their precinct. The better the addresses,
-the better the ranges, best first.
+**street ranges**: for each street in a zipcode, runs of house numbers and their precinct. Address data comes four
+ways.
 
 ## 1. Street data
 

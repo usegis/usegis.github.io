@@ -1,8 +1,8 @@
 # Precinct shapefiles
 
-Under Elections Code §12263, each California county's elections office gives its precinct map to anyone who asks, free.
-A precinct map is a set of shapes, one for each precinct, each with its precinct number. Counties keep it as a
-shapefile or GIS layer and redraw it before elections. A lookup can get it four ways, best first.
+Under Elections Code §12263, every California county elections office must provide its precinct map on request, at no
+charge. A precinct map is a set of shapes, one for each precinct, each with its precinct number. Counties keep it as a
+shapefile or GIS layer and redraw it before elections. These shapefiles are available four ways.
 
 ## 1. Live layer
 
@@ -20,8 +20,7 @@ Who: Elections or GIS
 
 ## 3. On request
 
-Emailed by the elections office, free under Elections Code §12263. Current when sent, but every requester has to ask,
-after every redraw.
+Emailed by the elections office under §12263. Current when sent, but every requester has to ask, after every redraw.
 
 Who: Elections
 
