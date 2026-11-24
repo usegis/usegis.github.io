@@ -21,16 +21,15 @@ the site itself.
   (`python3 bin/banner_png.py x/header.png 1500 500`); the account is @UseGISorg, since @usegis belongs to UseGIS
   Limited in Exeter, England. `linkedin/logo.png`: the bug (the logo's three sheets, no wordmark) at 400x400 on white, cropped close (Woodie, 2026-11-22),
   drawn from `usegis.svg` by `bin/logo_png.py`.
-- `pages/` (2026-11-23): reference pages for county Elections and GIS staff, under usegis.org/data/ (Woodie: `data` is
-  the base concept). `index.md` is /data/ ("Address to Precinct"); `precincts.md` ("Precinct shapefiles"),
+- `pages/` (2026-11-23): reference pages for county Elections and GIS staff, under usegis.org/tools/ (Woodie, 2026-11-24: `tools`,
+  not `data`). `index.md` is /tools/ ("Address to Precinct"); `precincts.md` ("Precinct shapefiles"),
   `addresses.md` ("Address data"), `districts.md` ("District lists") and `ranges.md` ("Street ranges", the file format)
-  are /data/precincts and so on. Written in plain Markdown so anyone can edit them. Conventions: `## 1. Live layer` is a
+  are /tools/precincts and so on. Written in plain Markdown so anyone can edit them. Conventions: `## 1. Live layer` is a
   numbered level with the anchor `#live-layer`, so an email can say "today you have this, we hope you'll consider
   that"; a paragraph starting `Who: ` is the small who-provides line (the label is dropped); a last line `[Back](./)` returns to
-  the /data/ index (`See also: ` still works for other pages); other `##` headings are notes. `bin/build.mjs` (markdown-it) renders them through
-  `pages/template.html` (root-relative paths) and leaves a redirect at each old address (/precincts and so on, first
-  published at the root), keeping any `#level`. Nothing county-specific here (Woodie: specifics go in the GitHub docs).
-  Not linked from the home page yet.
+  the /tools/ index (`See also: ` still works for other pages); other `##` headings are notes. `bin/build.mjs` (markdown-it) renders them through
+  `pages/template.html` (root-relative paths) and leaves a redirect at each old address (/precincts first, then /data/precincts), keeping any `#level`. Nothing county-specific here (Woodie: specifics go in the GitHub docs).
+  Linked as "tools" in the home page footer (2026-11-24).
 - `privacy.html`: no cookies or analytics; GitHub Pages may log requests. It covers this site only (Woodie,
   2026-11-21: keep focus on the site, not other sites).
 - `usegis.svg`: Woodie's logo (layered map sheets over "UseGIS"). Since 2026-11-21 the sheets are open outlines,
