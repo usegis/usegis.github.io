@@ -1,16 +1,13 @@
-# What a county can publish
+# Address to Precinct
 
-A precinct lookup answers an address with its precinct, and the districts that precinct votes in. It works like this:
+[Street ranges](ranges) answer an address with its precinct from small files, one for each zipcode. No database, no
+server and no geocoder: any web host can serve them, and a typed address never leaves the browser. The
+[California Precinct Lookup](https://lookup.usegis.org/) and the
+[precinct-lookup](https://www.npmjs.com/package/precinct-lookup) library both read them.
 
-1. **The county publishes** its precinct map, its addresses and its district list.
-2. **Street ranges are built** from them: small files, one for each zipcode, on any web host.
-3. **Anyone can use them:** the [California Precinct Lookup](https://lookup.usegis.org/), the
-   [precinct-lookup](https://www.npmjs.com/package/precinct-lookup) library in any app, or a county's own lookup page.
+Street ranges are only as good as the county data behind them. The [precinct shapefiles](precincts) say where each
+precinct's lines are and how current they are, and the [address data](addresses) says which house numbers are where.
+The closer both are to the county's own records, the more voters get the right answer.
 
-The better the county's data, the better every lookup built on it. Each page below lists the ways a county can provide
-it, best first, so a county can see where it is today and what would help its voters most.
-
-- [Precinct shapefiles](precincts): the precinct lines, and how current they are.
-- [Address data](addresses): which house numbers are where.
-- [District lists](districts): the districts each precinct is in.
-- [Street ranges](ranges): the small files a lookup makes from them, with no database.
+With those in place, a county can now easily publish its own address-to-district page: add its
+[district list](districts), and each address shows every district it votes in, from Congress down to school and fire.
