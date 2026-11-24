@@ -159,18 +159,26 @@
     color: var(--glow);
   }
 
-  .level {
-    margin: 20px 0;
-    padding: 16px 20px;
-    border: 1px solid var(--border);
+  /* One plain panel over the grid, so the text reads on a solid background. */
+  main.page {
+    padding: 28px 32px;
     border-radius: 12px;
     background: var(--bg);
+  }
+
+  @media (max-width: 520px) {
+    main.page {
+      padding: 20px 16px;
+    }
+  }
+
+  .level {
+    margin: 28px 0;
     scroll-margin-top: 16px;
   }
 
-  .level:target {
-    border-color: var(--glow);
-    box-shadow: 0 0 0 1px var(--glow);
+  .level:target h2 {
+    color: var(--glow);
   }
 
   .level h2 {
