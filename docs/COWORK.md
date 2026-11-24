@@ -22,7 +22,7 @@ the site itself.
   Limited in Exeter, England. `linkedin/logo.png`: the bug (the logo's three sheets, no wordmark) at 400x400 on white, cropped close (Woodie, 2026-11-22),
   drawn from `usegis.svg` by `bin/logo_png.py`.
 - `pages/` (2026-11-23): reference pages for county Elections and GIS staff, under usegis.org/tools/ (Woodie, 2026-11-24: `tools`,
-  not `data`). `index.md` is /tools/ ("Address to Precinct"); `precincts.md` ("Precinct shapefiles"),
+  not `data`). `index.md` is /tools/ ("Lookup tools"); `precincts.md` ("Precinct shapefiles"),
   `addresses.md` ("Address data"), `districts.md` ("District lists") and `ranges.md` ("Street ranges", the file format)
   are /tools/precincts and so on. Written in plain Markdown so anyone can edit them. Conventions: `## 1. Live layer` is a
   numbered level with the anchor `#live-layer`, so an email can say "today you have this, we hope you'll consider

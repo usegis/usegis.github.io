@@ -1,4 +1,4 @@
-# Address to Precinct
+# Lookup tools
 
 With all required information available as public data, an address-to-precinct lookup is easy
 and advantageous with [street ranges](ranges). No database, no server and no geocoder required.
