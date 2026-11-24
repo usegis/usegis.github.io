@@ -21,9 +21,9 @@ the site itself.
   (`python3 bin/banner_png.py x/header.png 1500 500`); the account is @UseGISorg, since @usegis belongs to UseGIS
   Limited in Exeter, England. `linkedin/logo.png`: the bug (the logo's three sheets, no wordmark) at 400x400 on white, cropped close (Woodie, 2026-11-22),
   drawn from `usegis.svg` by `bin/logo_png.py`.
-- `pages/precincts.md` ("Precinct shapefiles"), `pages/addresses.md` ("Address data") and `pages/districts.md`
-  ("District lists") (2026-11-23): reference pages for county Elections and GIS staff, at usegis.org/precincts, /addresses
-  and /districts, written in plain Markdown so
+- `pages/precincts.md` ("Precinct shapefiles"), `pages/addresses.md` ("Address data") `pages/districts.md`
+  ("District lists") and `pages/ranges.md` ("Street ranges", the file format; no levels) (2026-11-23): reference pages for county Elections and GIS staff, at usegis.org/precincts, /addresses,
+  /districts and /ranges, written in plain Markdown so
   anyone can edit them. Conventions: `## 1. Live layer` is a numbered level with the anchor `#live-layer`, so an email can
   say "today you have this, we hope you'll consider that"; a paragraph starting `Who: ` is the small who-provides line
   (the label is dropped); one starting `See also: ` closes the page; other `##` headings are notes. `bin/build.mjs`
