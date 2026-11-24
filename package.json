@@ -1,0 +1,11 @@
+{
+  "name": "usegis-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node bin/build.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "14.1.0"
+  }
+}

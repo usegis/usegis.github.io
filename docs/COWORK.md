@@ -21,11 +21,13 @@ the site itself.
   (`python3 bin/banner_png.py x/header.png 1500 500`); the account is @UseGISorg, since @usegis belongs to UseGIS
   Limited in Exeter, England. `linkedin/logo.png`: the bug (the logo's three sheets, no wordmark) at 400x400 on white, cropped close (Woodie, 2026-11-22),
   drawn from `usegis.svg` by `bin/logo_png.py`.
-- `precincts.html` ("Precinct shapefiles") and `addresses.html` ("Address data") (2026-11-23): reference pages for county Elections and GIS staff, at
-  usegis.org/precincts and usegis.org/addresses. Each names its levels, best first, as cards with anchors an email can link
-  (`#live-layer`, `#download`, `#on-request`, `#swdb`; `#street-data`, `#address-points`, `#parcels`, `#census-ranges`), so
-  an email can say "today you have this, we hope you'll consider that." Nothing county-specific here (Woodie: specifics go in
-  the GitHub docs). Their styles follow the home page's in `style.css`. Links between them omit `.html`, which Pages serves.
+- `pages/precincts.md` ("Precinct shapefiles") and `pages/addresses.md` ("Address data") (2026-11-23): reference
+  pages for county Elections and GIS staff, at usegis.org/precincts and usegis.org/addresses, written in plain Markdown so
+  anyone can edit them. Conventions: `## 1. Live layer` is a numbered level with the anchor `#live-layer`, so an email can
+  say "today you have this, we hope you'll consider that"; a paragraph starting `Who: ` is the small who-provides line
+  (the label is dropped); one starting `See also: ` closes the page; other `##` headings are notes. `bin/build.mjs`
+  (markdown-it) renders them through `pages/template.html`. Nothing county-specific here (Woodie: specifics go in the
+  GitHub docs). Their styles follow the home page's in `style.css`; links omit `.html`, which Pages serves.
 - `privacy.html`: no cookies or analytics; GitHub Pages may log requests. It covers this site only (Woodie,
   2026-11-21: keep focus on the site, not other sites).
 - `usegis.svg`: Woodie's logo (layered map sheets over "UseGIS"). Since 2026-11-21 the sheets are open outlines,
@@ -35,8 +37,10 @@ the site itself.
 
 ## Publishing
 
-GitHub Pages from `main` at the root, custom domain usegis.org, HTTPS enforced. A push to `main` is live within a
-minute or two; GitHub caches pages for up to 10 minutes. Woodie pushes, or says yes first.
+GitHub Pages through `.github/workflows/pages.yml` (2026-11-23): on a push to `main` it runs `npm ci` and `npm run build`,
+which copies the static files and renders `pages/*.md` into `_site/` (gitignored), then deploys that in its own job.
+Custom domain usegis.org, HTTPS enforced. Live within a minute or two; GitHub caches pages for up to 10 minutes. Woodie
+pushes, or says yes first. No local preview needed for the Markdown pages.
 
 DNS at Network Solutions: A `@` 185.199.108.153, .109, .110 and .111; CNAME `www` usegis.github.io (GitHub redirects
 www to usegis.org); CNAME `lookup` usegis.github.io for the lookup's repo. usegis.org is verified for Pages in the
