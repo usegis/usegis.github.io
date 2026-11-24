@@ -52,4 +52,4 @@ The street ranges and precinct outlines are small files, one for each zipcode. T
 [precinct-lookup](https://www.npmjs.com/package/precinct-lookup) library does the same in any app. A typed address
 never leaves the browser, and no voter data is used.
 
-See also: [Street ranges](ranges), [Precinct shapefiles](precincts), [District lists](districts)
+[Back](./)

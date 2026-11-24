@@ -39,4 +39,4 @@ map. The [district list](districts), one file for the county, adds the districts
 Every street range in California is about 1.6 million runs in 2,059 zipcode files, about 11 MB compressed. A county's
 files can sit on its own website, and a typed address never leaves the browser.
 
-See also: [Address data](addresses), [Precinct shapefiles](precincts), [District lists](districts)
+[Back](./)
