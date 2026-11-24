@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Precinct maps - UseGIS</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+  <a href="./"><img class="logo small" src="usegis.svg" alt="UseGIS"></a>
+  <h1>Precinct maps</h1>
+  <p>A precinct map is a set of shapes, one for each precinct, each with its precinct number. Counties keep it as a
+     shapefile or GIS layer and redraw it before elections. A lookup can get it four ways, best first.</p>
+
+  <section class="level" id="live-layer">
+    <h2><span>1</span> Live layer</h2>
+    <p>The precinct map on the county's GIS server, such as ArcGIS, updated after each redraw. A lookup always reads
+       the current lines, and no one has to send a file.</p>
+    <p class="who">Elections, published by GIS</p>
+  </section>
+
+  <section class="level" id="download">
+    <h2><span>2</span> Download</h2>
+    <p>A dated file, a shapefile or GeoJSON, on the county's website or GIS hub. Current until the next redraw, when
+       someone has to post the new one.</p>
+    <p class="who">Elections or GIS</p>
+  </section>
+
+  <section class="level" id="on-request">
+    <h2><span>3</span> On request</h2>
+    <p>Emailed by the elections office, free under Elections Code §12263. Current when sent, but every requester has
+       to ask, after every redraw.</p>
+    <p class="who">Elections</p>
+  </section>
+
+  <section class="level" id="swdb">
+    <h2><span>4</span> Statewide Database</h2>
+    <p>The Statewide Database (SWDB) publishes every county's precinct map as GeoJSON, months after each election.
+       Useful by itself, but any redraw since then is missing.</p>
+    <p class="who">SWDB, from what counties send it</p>
+  </section>
+
+  <h2 class="note">What makes a precinct map useful</h2>
+  <p>Precinct numbers as the voter file writes them (registration precincts, not only consolidated voting
+     precincts), and the date or election the lines are for.</p>
+
+  <p class="next">Next: <a href="addresses">Addresses</a></p>
+  <footer>© 2026 UseGIS | <a href="privacy.html">privacy</a></footer>
+</main>
+</body>
+</html>

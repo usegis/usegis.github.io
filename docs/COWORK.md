@@ -21,6 +21,11 @@ the site itself.
   (`python3 bin/banner_png.py x/header.png 1500 500`); the account is @UseGISorg, since @usegis belongs to UseGIS
   Limited in Exeter, England. `linkedin/logo.png`: the bug (the logo's three sheets, no wordmark) at 400x400 on white, cropped close (Woodie, 2026-11-22),
   drawn from `usegis.svg` by `bin/logo_png.py`.
+- `precincts.html` and `addresses.html` (2026-11-23): reference pages for county Elections and GIS staff, at
+  usegis.org/precincts and usegis.org/addresses. Each names its levels, best first, as cards with anchors an email can link
+  (`#live-layer`, `#download`, `#on-request`, `#swdb`; `#street-data`, `#address-points`, `#parcels`, `#census-ranges`), so
+  an email can say "today you have this, we hope you'll consider that." Nothing county-specific here (Woodie: specifics go in
+  the GitHub docs). Their styles follow the home page's in `style.css`. Links between them omit `.html`, which Pages serves.
 - `privacy.html`: no cookies or analytics; GitHub Pages may log requests. It covers this site only (Woodie,
   2026-11-21: keep focus on the site, not other sites).
 - `usegis.svg`: Woodie's logo (layered map sheets over "UseGIS"). Since 2026-11-21 the sheets are open outlines,

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Addresses - UseGIS</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+  <a href="./"><img class="logo small" src="usegis.svg" alt="UseGIS"></a>
+  <h1>Addresses</h1>
+  <p>A precinct lookup needs to know which house numbers are in which precinct. Whatever a county publishes is
+     turned into <b>street ranges</b>: for each street in a zipcode, runs of house numbers and their precinct. The
+     better the addresses, the better the ranges, best first.</p>
+
+  <section class="level" id="street-data">
+    <h2><span>1</span> Street data</h2>
+    <p>Each address with its precinct, from the elections office's own system, after each redraw.</p>
+    <p><b>How it's used:</b> grouped into street ranges, each keeping the county's precinct.</p>
+    <p><b>Result:</b> the county's own answer for every address.</p>
+    <p class="who">Elections</p>
+  </section>
+
+  <section class="level" id="address-points">
+    <h2><span>2</span> Address points</h2>
+    <p>Each address at its location: house number, street and zipcode.</p>
+    <p><b>How it's used:</b> each point placed on the <a href="precincts">precinct map</a>, then grouped into
+       street ranges.</p>
+    <p><b>Result:</b> right wherever the precinct map is current.</p>
+    <p class="who">GIS or addressing</p>
+  </section>
+
+  <section class="level" id="parcels">
+    <h2><span>3</span> Parcels</h2>
+    <p>Parcel shapes with each parcel's site address and parcel number.</p>
+    <p><b>How it's used:</b> each parcel's center stands in for an address point. Only the site address and parcel
+       number are read, never owner names or mailing addresses.</p>
+    <p><b>Result:</b> nearly as good as address points, missing homes with no site address on file.</p>
+    <p class="who">Assessor or GIS</p>
+  </section>
+
+  <section class="level" id="census-ranges">
+    <h2><span>4</span> Census ranges</h2>
+    <p>Census TIGER's ranges of possible house numbers on each side of each block.</p>
+    <p><b>How it's used:</b> each side placed on the precinct map.</p>
+    <p><b>Result:</b> fine in towns, but often missing or wrong for rural addresses.</p>
+    <p class="who">Census, when a county publishes no addresses</p>
+  </section>
+
+  <h2 class="note">The result</h2>
+  <p>The street ranges and precinct outlines are small files, one for each zipcode. The
+     <a href="https://lookup.usegis.org/">California Precinct Lookup</a> reads them in the browser, and the
+     <a href="https://www.npmjs.com/package/precinct-lookup">precinct-lookup</a> library does the same in any app. A
+     typed address never leaves the browser, and no voter data is used.</p>
+
+  <p class="next">Also: <a href="precincts">Precinct maps</a></p>
+  <footer>© 2026 UseGIS | <a href="privacy.html">privacy</a></footer>
+</main>
+</body>
+</html>
