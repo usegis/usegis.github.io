@@ -34,7 +34,8 @@ the site itself.
   2026-11-21: keep focus on the site, not other sites).
 - `usegis.svg`: Woodie's logo (layered map sheets over "UseGIS"). Since 2026-11-21 the sheets are open outlines,
   each line stopping where the sheet above covers it, so one file works on light and dark pages.
-- `favicon.ico`: Woodie's 32x32 layered sheets.
+- `favicon.ico`: Woodie's 32x32 layered sheets. `apple-touch-icon.png`: the bug at 180x180 for phone home screens and
+  Chrome's shortcut tiles (`python3 bin/logo_png.py usegis.svg apple-touch-icon.png 180`) (2026-11-25).
 - `CNAME`: `usegis.org`.
 
 ## Publishing
