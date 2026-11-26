@@ -6,38 +6,39 @@ districts, using the same precinct numbers as the [precinct map](precincts). Cou
 
 ## 1. District-by-precinct file
 
-Each precinct with every district it's in, exported from the election system after each redraw. Many county systems
-already produce one, such as DFM's district precinct file (PDMJ001).
+The election system exports each precinct with every district it's in after each redraw. Many county systems already
+produce this file, such as DFM's district precinct file (PDMJ001).
 
-**Method:** read as it is; each district is named once and each precinct lists its districts.
+**Method:** The file is read as it is; each district is named once, and each precinct lists its districts.
 
-**Result:** every district on the ballot, exactly as Elections assigns them.
+**Result:** Every district on the ballot comes out exactly as Elections assigns it.
 
 Publisher: Elections
 
 ## 2. Precinct map with district columns
 
-The precinct map itself, with a column for each kind of district: congressional, senate, assembly, supervisor and so on.
+The precinct map itself has a column for each kind of district: congressional, senate, assembly, supervisor and so on.
 
-**Method:** each precinct's columns become its list of districts.
+**Method:** Each precinct's columns become its list of districts.
 
-**Result:** right for the districts it has columns for, often only the larger ones.
+**Result:** The lists are right for the districts with columns, often only the larger ones.
 
 Publisher: Elections or GIS
 
 ## 3. District maps
 
-A separate map for each kind of district, with no list by precinct.
+Each kind of district has its own map, with no list by precinct.
 
-**Method:** each precinct is laid over the district maps and takes the district that holds it.
+**Method:** Each precinct is laid over the district maps and takes the district that holds it.
 
-**Result:** right where the district lines follow precinct lines, as they usually do; check precincts along the edges.
+**Result:** The answers are right where district lines follow precinct lines, as they usually do; precincts along the
+edges need a check.
 
 Publisher: GIS
 
 ## The result
 
-One small file for the county: the districts, named once, and each precinct's list of them.
+The result is one small file for the county: the districts, named once, and each precinct's list of them.
 
 ```
 {

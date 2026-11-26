@@ -5,7 +5,7 @@ one for each zipcode, that any web host can serve and any browser can read.
 
 ## One file for each zipcode
 
-Each street in the zipcode, with runs of house numbers and the precinct they're in. A run covers one side of the
+The file lists each street in the zipcode, with runs of house numbers and the precinct they're in. A run covers one side of the
 street, so both ends are odd or both are even.
 
 ```

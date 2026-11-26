@@ -1,49 +1,49 @@
 # Address data
 
 A precinct lookup needs to match house numbers to a precinct.
-Public address information is turned into [street ranges](ranges)
-for each street in a zipcode, with runs of house numbers with their precinct.
+Public address information is turned into [street ranges](ranges),
+which give each street in a zipcode runs of house numbers with their precinct.
 Address data comes four ways.
 
 ## 1. Street data
 
-Each address with its precinct, from the elections office's own system, after each redraw.
+The elections office exports each address with its precinct from its own system after each redraw.
 
-**Method:** grouped into street ranges, each keeping the county's precinct.
+**Method:** The addresses are grouped into street ranges, each keeping the county's precinct.
 
-**Result:** the most accurate answer for every address.
+**Result:** Every address gets the most accurate answer.
 
 Publisher: Elections
 
 ## 2. Address points
 
-Each address at its location: house number, street and zipcode.
+Each address point marks one address at its location, with its house number, street and zipcode.
 
-**Method:** each point placed on the [precinct map](precincts),
-then grouped into street ranges.
+**Method:** Each point is placed on the [precinct map](precincts),
+then the points are grouped into street ranges.
 
-**Result:** right wherever the precinct map is current.
+**Result:** The answers are right wherever the precinct map is current.
 
 Publisher: GIS, Planning, Public Works or 911 addressing
 
 ## 3. Parcels
 
-Parcel shapes, each with its site address.
+Each parcel shape comes with its site address.
 
-**Method:** each parcel's center becomes an address point, placed
+**Method:** Each parcel's center becomes an address point, which is placed
 on the [precinct map](precincts) and grouped into street ranges.
 
-**Result:** nearly as good as address points, missing homes with no site address on file.
+**Result:** The answers are nearly as good as address points, but homes with no site address on file are missing.
 
 Publisher: Assessor, GIS, IT or Public Works
 
 ## 4. Census ranges
 
-Census TIGER's ranges of possible house numbers on each side of each block.
+Census TIGER gives ranges of possible house numbers on each side of each block.
 
-**Method:** each side placed on the precinct map.
+**Method:** Each side is placed on the precinct map.
 
-**Result:** fine in towns, but often missing or wrong for rural addresses.
+**Result:** The ranges work in towns but are often missing or wrong for rural addresses.
 
 Publisher: [Census TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) (only where a county publishes no addresses)
 
