@@ -1,8 +1,9 @@
 # Address data
 
 A precinct lookup needs to match house numbers to a precinct.
-Public address information is turned into **street ranges**: for each street in a zipcode,
-runs of house numbers with their precinct. Address data comes four ways.
+Public address information is turned into [street ranges](ranges)
+for each street in a zipcode, runs of house numbers with their precinct.
+Address data comes four ways.
 
 ## 1. Street data
 
@@ -44,7 +45,7 @@ Census TIGER's ranges of possible house numbers on each side of each block.
 
 **Result:** fine in towns, but often missing or wrong for rural addresses.
 
-Source: [Census TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html), only where a county publishes no addresses
+Source: [Census TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) (only where a county publishes no addresses)
 
 ## The result
 
