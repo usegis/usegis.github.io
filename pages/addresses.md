@@ -2,7 +2,7 @@
 
 A precinct lookup needs to match house numbers to a precinct.
 Public address information is turned into [street ranges](ranges)
-for each street in a zipcode, runs of house numbers with their precinct.
+for each street in a zipcode, with runs of house numbers with their precinct.
 Address data comes four ways.
 
 ## 1. Street data
@@ -24,7 +24,7 @@ then grouped into street ranges.
 
 **Result:** right wherever the precinct map is current.
 
-Source: GIS or addressing
+Source: GIS, Planning, Public Works or 911 addressing
 
 ## 3. Parcels
 
@@ -35,7 +35,7 @@ Only the site address and parcel number are used, never owner names.
 
 **Result:** nearly as good as address points, missing homes with no site address on file.
 
-Source: Assessor or GIS
+Source: Assessor, GIS, IT or Public Works
 
 ## 4. Census ranges
 
