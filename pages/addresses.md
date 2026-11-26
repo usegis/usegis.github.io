@@ -30,8 +30,8 @@ Publisher: GIS, Planning, Public Works or 911 addressing
 
 Parcel shapes, each with its site address.
 
-**Method:** each parcel's center becomes an address point.
-Only the site address and parcel number are used, never owner names.
+**Method:** each parcel's center becomes an address point, placed
+on the [precinct map](precincts) and grouped into street ranges.
 
 **Result:** nearly as good as address points, missing homes with no site address on file.
 
