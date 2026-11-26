@@ -9,31 +9,31 @@ districts, using the same precinct numbers as the [precinct map](precincts). Cou
 Each precinct with every district it's in, exported from the election system after each redraw. Many county systems
 already produce one, such as DFM's district precinct file (PDMJ001).
 
-**How it's used:** read as it is; each district is named once and each precinct lists its districts.
+**Method:** read as it is; each district is named once and each precinct lists its districts.
 
 **Result:** every district on the ballot, exactly as Elections assigns them.
 
-Source: Elections
+Kept by: Elections
 
 ## 2. Precinct map with district columns
 
 The precinct map itself, with a column for each kind of district: congressional, senate, assembly, supervisor and so on.
 
-**How it's used:** each precinct's columns become its list of districts.
+**Method:** each precinct's columns become its list of districts.
 
 **Result:** right for the districts it has columns for, often only the larger ones.
 
-Source: Elections or GIS
+Kept by: Elections or GIS
 
 ## 3. District maps
 
 A separate map for each kind of district, with no list by precinct.
 
-**How it's used:** each precinct is laid over the district maps and takes the district that holds it.
+**Method:** each precinct is laid over the district maps and takes the district that holds it.
 
 **Result:** right where the district lines follow precinct lines, as they usually do; check precincts along the edges.
 
-Source: GIS
+Kept by: GIS
 
 ## The result
 

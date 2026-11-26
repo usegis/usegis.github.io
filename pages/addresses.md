@@ -9,43 +9,43 @@ Address data comes four ways.
 
 Each address with its precinct, from the elections office's own system, after each redraw.
 
-**How it's used:** grouped into street ranges, each keeping the county's precinct.
+**Method:** grouped into street ranges, each keeping the county's precinct.
 
 **Result:** the most accurate answer for every address.
 
-Source: Elections
+Kept by: Elections
 
 ## 2. Address points
 
 Each address at its location: house number, street and zipcode.
 
-**How it's used:** each point placed on the [precinct map](precincts),
+**Method:** each point placed on the [precinct map](precincts),
 then grouped into street ranges.
 
 **Result:** right wherever the precinct map is current.
 
-Source: GIS, Planning, Public Works or 911 addressing
+Kept by: GIS, Planning, Public Works or 911 addressing
 
 ## 3. Parcels
 
 Parcel shapes, each with its site address.
 
-**How it's used:** each parcel's center becomes an address point.
+**Method:** each parcel's center becomes an address point.
 Only the site address and parcel number are used, never owner names.
 
 **Result:** nearly as good as address points, missing homes with no site address on file.
 
-Source: Assessor, GIS, IT or Public Works
+Kept by: Assessor, GIS, IT or Public Works
 
 ## 4. Census ranges
 
 Census TIGER's ranges of possible house numbers on each side of each block.
 
-**How it's used:** each side placed on the precinct map.
+**Method:** each side placed on the precinct map.
 
 **Result:** fine in towns, but often missing or wrong for rural addresses.
 
-Source: [Census TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) (only where a county publishes no addresses)
+Kept by: [Census TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) (only where a county publishes no addresses)
 
 ## The result
 
