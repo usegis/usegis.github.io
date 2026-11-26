@@ -26,7 +26,7 @@ the site itself.
   `addresses.md` ("Address data"), `districts.md` ("District lists") and `ranges.md` ("Street ranges", the file format)
   are /tools/precincts and so on. Written in plain Markdown so anyone can edit them. Conventions: `## 1. Live layer` is a
   numbered level with the anchor `#live-layer`, so an email can say "today you have this, we hope you'll consider
-  that"; each level has **Method:** and **Result:**, then a paragraph starting `Kept by: `, the small line naming the office that keeps the data (label shown; the older `Who: `/`Source: ` drop it) (Woodie, 2026-11-26); a last line `[Back](./)` returns to
+  that"; each level has **Method:** and **Result:**, then a paragraph starting `Publisher: `, the small line naming the office that publishes the data (label shown; the older `Who: `/`Source: ` drop it) (Woodie, 2026-11-26); a last line `[Back](./)` returns to
   the /tools/ index (`See also: ` still works for other pages); other `##` headings are notes. `bin/build.mjs` (markdown-it) renders them through
   `pages/template.html` (root-relative paths) and leaves a redirect at each old address (/precincts first, then /data/precincts), keeping any `#level`. Nothing county-specific here (Woodie: specifics go in the GitHub docs).
   Linked as "tools" in the home page footer (2026-11-24).

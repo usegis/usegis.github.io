@@ -13,7 +13,7 @@ Each address with its precinct, from the elections office's own system, after ea
 
 **Result:** the most accurate answer for every address.
 
-Kept by: Elections
+Publisher: Elections
 
 ## 2. Address points
 
@@ -24,7 +24,7 @@ then grouped into street ranges.
 
 **Result:** right wherever the precinct map is current.
 
-Kept by: GIS, Planning, Public Works or 911 addressing
+Publisher: GIS, Planning, Public Works or 911 addressing
 
 ## 3. Parcels
 
@@ -35,7 +35,7 @@ Only the site address and parcel number are used, never owner names.
 
 **Result:** nearly as good as address points, missing homes with no site address on file.
 
-Kept by: Assessor, GIS, IT or Public Works
+Publisher: Assessor, GIS, IT or Public Works
 
 ## 4. Census ranges
 
@@ -45,7 +45,7 @@ Census TIGER's ranges of possible house numbers on each side of each block.
 
 **Result:** fine in towns, but often missing or wrong for rural addresses.
 
-Kept by: [Census TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) (only where a county publishes no addresses)
+Publisher: [Census TIGER](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) (only where a county publishes no addresses)
 
 ## The result
 
