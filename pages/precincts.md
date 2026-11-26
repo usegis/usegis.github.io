@@ -9,27 +9,27 @@ shapefile or GIS layer and redraw it before elections. These shapefiles are avai
 The precinct map on the county's GIS server, such as ArcGIS, updated after each redraw. A lookup always reads the
 current lines, and no one has to send a file.
 
-Who: Elections, published by GIS
+Source: Elections, published by GIS
 
 ## 2. Download
 
 A dated file, a shapefile or GeoJSON, on the county's website or GIS hub. Current until the next redraw, when someone
 has to post the new one.
 
-Who: Elections or GIS
+Source: Elections or GIS
 
 ## 3. On request
 
 Emailed by the elections office under §12263. Current when sent, but every requester has to ask, after every redraw.
 
-Who: Elections
+Source: Elections
 
 ## 4. Statewide Database
 
 The Statewide Database (SWDB) publishes every county's precinct map as GeoJSON, months after each election. Useful by
 itself, but any redraw since then is missing.
 
-Who: SWDB, from what counties send it
+Source: SWDB, from what counties send it
 
 ## What makes a precinct map useful
 

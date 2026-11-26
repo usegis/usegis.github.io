@@ -26,7 +26,7 @@ function sections(html) {
 function page(markdown) {
   const title = markdown.match(/^# (.+)$/m)[1];
   const html = sections(md.render(markdown))
-    .replace(/<p>Who: /g, '<p class="who">')
+    .replace(/<p>(?:Who|Source): /g, '<p class="who">')
     .replace(/<p>See also: /g, '<p class="next">See also: ')
     .replace('<p><a href="./">Back</a></p>', '<p class="next"><a href="./">Back</a></p>');
   return template.replace("{{title}}", title).replace("{{content}}", html.trimEnd());

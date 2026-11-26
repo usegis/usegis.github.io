@@ -13,7 +13,7 @@ already produce one, such as DFM's district precinct file (PDMJ001).
 
 **Result:** every district on the ballot, exactly as Elections assigns them.
 
-Who: Elections
+Source: Elections
 
 ## 2. Precinct map with district columns
 
@@ -23,7 +23,7 @@ The precinct map itself, with a column for each kind of district: congressional,
 
 **Result:** right for the districts it has columns for, often only the larger ones.
 
-Who: Elections or GIS
+Source: Elections or GIS
 
 ## 3. District maps
 
@@ -33,7 +33,7 @@ A separate map for each kind of district, with no list by precinct.
 
 **Result:** right where the district lines follow precinct lines, as they usually do; check precincts along the edges.
 
-Who: GIS
+Source: GIS
 
 ## The result
 
