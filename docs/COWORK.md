@@ -24,7 +24,7 @@ the site itself.
 - `pages/` (2026-11-23): reference pages for county Elections and GIS staff, under usegis.org/tools/ (Woodie, 2026-11-24: `tools`,
   not `data`). `index.md` is /tools/ ("Lookup tools"); `precincts.md` ("Precinct shapefiles"),
   `addresses.md` ("Address data"), `districts.md` ("District lists") and `ranges.md` ("Street ranges", the file format)
-  are /tools/precincts and so on. `street-data.md` ("Street data extract", 2026-11-27) is the campaign page for counties
+  are /tools/precincts and so on. `extract.md` ("Street data extract", 2026-11-27, at /tools/extract: "we need an extract") is the campaign page for counties
   posting the `SGMJ001` report free after each redraw, and for making it free on request like the precinct map; the
   addresses page keeps its Street data level short and links there. Written in plain Markdown so anyone can edit them. Conventions: `## 1. Live layer` is a
   numbered level with the anchor `#live-layer`, so an email can say "today you have this, we hope you'll consider

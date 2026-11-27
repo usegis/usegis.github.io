@@ -3,10 +3,8 @@
 Every California elections office can run one report that answers "which precinct is this address in?" for the whole
 county: the street data extract, report `SGMJ001` in most counties' election systems, also called the street index,
 street guide or street file. It lists each address with its house number, street, zipcode and precinct. It holds no
-voter information: no names, birth dates or party.
-
-Most counties sell it on request today, for $19 to $45 a copy, through a form. Posting it free, and replacing it after
-each redraw, serves everyone better.
+voter information: no names, birth dates or party. Although some counties sell this data, others post it as a free
+download. The staff time involved in processing each request is a net loss, so this information should simply be free.
 
 ## For the elections office
 

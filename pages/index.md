@@ -8,7 +8,7 @@ Only static files need to be published, and a typed address never leaves the bro
 
 Street ranges are only as good as the county data behind them. The [precinct shapefiles](precincts) say where each
 precinct's lines are and how current they are, and the [address data](addresses) says which house numbers are where.
-Best of all is the elections office's own [street data extract](street-data): each address with its precinct.
+Best of all is the elections office's own [street data extract](extract): each address with its precinct.
 The closer both are to the county's own records, the more voters get the right answer.
 
 With those in place, a county can now easily publish its own address-to-district page: add its

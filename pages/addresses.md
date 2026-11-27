@@ -10,7 +10,7 @@ Address data comes four ways.
 ## 1. Street data
 
 The preferred option. The elections office posts its
-[street data extract](street-data), `SGMJ001`, a standard report from its election
+[street data extract](extract), `SGMJ001`, a standard report from its election
 system: each address with its house number, street, zipcode and precinct, and no
 voter information. Every address gets the county's own precinct, the most
 accurate answer.
