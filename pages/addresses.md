@@ -3,8 +3,8 @@
 Under the California Public Records Act, the GIS data a county keeps,
 such as its parcel map, is a public record, and the county must provide it
 on request and cannot require licensing fees or impose distribution
-restrictions. A precinct lookup needs to match house numbers to a precinct.
-Public address information is turned into [street ranges](ranges).
+restrictions. A precinct lookup matches house numbers to a precinct
+by turning address data into [street ranges](ranges).
 Address data comes four ways.
 
 ## 1. Street data
