@@ -9,11 +9,17 @@ Address data comes four ways.
 
 ## 1. Street data
 
-The elections office exports each address with its precinct from its own system
-after each redraw. Most California counties' election systems already have this report:
-the street data extract, or street index, `SGMJ001`. The addresses are grouped
-into street ranges, each keeping the county's precinct. Every address gets the
-most accurate answer.
+Most California counties' election systems already run this report: the street
+index, `SGMJ001`, also called the street guide or street data extract. It lists
+each address with its house number, street, zipcode and precinct, and no voter
+information.
+
+Post it on the county's GIS server or website, as a table or a download, and
+replace it after each redraw. Choose each address over address ranges where the
+report offers both.
+
+The addresses are grouped into street ranges, each keeping the county's
+precinct. Every address gets the most accurate answer.
 
 Publisher: Elections
 
