@@ -10,13 +10,14 @@ Address data comes four ways.
 ## 1. Street data
 
 Most California counties' election systems already run this report: the street
-index, `SGMJ001`, also called the street guide or street data extract. It lists
-each address with its house number, street, zipcode and precinct, and no voter
-information.
+index, `SGMJ001`, also called the street guide, street file or street data
+extract. It lists each address with its house number, street, zipcode and
+precinct, and no voter information.
 
-Post it on the county's GIS server or website, as a table or a download, and
-replace it after each redraw. Choose each address over address ranges where the
-report offers both.
+Many counties sell it on request, for $19 to $45 a copy. Post it free instead, on
+the county's GIS server or website, as a table or a download, and replace it after
+each redraw: one posting saves answering each request. Choose each address over
+address ranges where the report offers both.
 
 The addresses are grouped into street ranges, each keeping the county's
 precinct. Every address gets the most accurate answer.
