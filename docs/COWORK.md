@@ -24,7 +24,9 @@ the site itself.
 - `pages/` (2026-11-23): reference pages for county Elections and GIS staff, under usegis.org/tools/ (Woodie, 2026-11-24: `tools`,
   not `data`). `index.md` is /tools/ ("Lookup tools"); `precincts.md` ("Precinct shapefiles"),
   `addresses.md` ("Address data"), `districts.md` ("District lists") and `ranges.md` ("Street ranges", the file format)
-  are /tools/precincts and so on. Written in plain Markdown so anyone can edit them. Conventions: `## 1. Live layer` is a
+  are /tools/precincts and so on. `street-data.md` ("Street data extract", 2026-11-27) is the campaign page for counties
+  posting the `SGMJ001` report free after each redraw, and for making it free on request like the precinct map; the
+  addresses page keeps its Street data level short and links there. Written in plain Markdown so anyone can edit them. Conventions: `## 1. Live layer` is a
   numbered level with the anchor `#live-layer`, so an email can say "today you have this, we hope you'll consider
   that"; each level has **Method:** and **Result:**, then a paragraph starting `Publisher: `, the small line naming the office that publishes the data (label shown; the older `Who: `/`Source: ` drop it) (Woodie, 2026-11-26); a last line `[Back](./)` returns to
   the /tools/ index (`See also: ` still works for other pages); other `##` headings are notes. `bin/build.mjs` (markdown-it) renders them through
